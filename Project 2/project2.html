@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="project2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Spice & Flavor</h1>
+        <p>Delicious meals crafted with love</p>
+        <div class="cart-widget">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count">0</span>
+          <span id="cart-total">Rs. 0</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/restaurant.jpg" alt="Restaurant" />
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="menu-search"
+          placeholder="Search menu items..."
+        />
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+
+    <section class="menu container">
+      <h2>Starters</h2>
+      <div class="menu-items">
+        <div class="item">
+          <div class="item-image placeholder-image" data-food="🍞">
+            <span class="food-icon">🍞</span>
+            <span class="food-label">Garlic Bread</span>
+          </div>
+          <div class="item-content">
+            <h3>Garlic Bread</h3>
+            <p>Freshly baked bread with garlic butter</p>
+            <div class="item-footer">
+              <span class="price">Rs. 250</span>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image placeholder-image" data-food="🍗">
+            <span class="food-icon">🍗</span>
+            <span class="food-label">Chicken Wings</span>
+          </div>
+          <div class="item-content">
+            <h3>Chicken Wings</h3>
+            <p>Spicy wings with special sauce</p>
+            <div class="item-footer">
+              <span class="price">Rs. 450</span>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Main Course</h2>
+      <div class="menu-items">
+        <div class="item">
+          <div class="item-image placeholder-image" data-food="🍛">
+            <span class="food-icon">🍛</span>
+            <span class="food-label">Beef Biryani</span>
+          </div>
+          <div class="item-content">
+            <h3>Beef Biryani</h3>
+            <p>Traditional Pakistani rice dish with tender beef</p>
+            <div class="item-footer">
+              <span class="price">Rs. 700</span>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image placeholder-image" data-food="🍛">
+            <span class="food-icon">🍛</span>
+            <span class="food-label">Butter Chicken</span>
+          </div>
+          <div class="item-content">
+            <h3>Butter Chicken</h3>
+            <p>Creamy tomato-based chicken curry</p>
+            <div class="item-footer">
+              <span class="price">Rs. 650</span>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Desserts</h2>
+      <div class="menu-items">
+        <div class="item">
+          <div class="item-image placeholder-image" data-food="🍮">
+            <span class="food-icon">🍮</span>
+            <span class="food-label">Gulab Jamun</span>
+          </div>
+          <div class="item-content">
+            <h3>Gulab Jamun</h3>
+            <p>Soft milk-solid balls soaked in sweet syrup</p>
+            <div class="item-footer">
+              <span class="price">Rs. 150</span>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image placeholder-image" data-food="🥛">
+            <span class="food-icon">🥛</span>
+            <span class="food-label">Kheer</span>
+          </div>
+          <div class="item-content">
+            <h3>Kheer</h3>
+            <p>Rice pudding with cardamom and nuts</p>
+            <div class="item-footer">
+              <span class="price">Rs. 180</span>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add reservation form section -->
+      <section class="reservation-section">
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form" class="reservation-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="date" id="date" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="time" id="time" required />
+            </div>
+            <div class="form-group">
+              <select id="guests" required>
+                <option value="">Number of Guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5+ Guests</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-reservation">Make Reservation</button>
+        </form>
+      </section>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Spice & Flavor</p>
+    </footer>
+    
+    <script src="project2.js"></script>
+  </body>
+</html>

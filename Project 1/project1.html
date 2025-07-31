@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel and Tours website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="project1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="welcome animate-on-scroll">
+          <b><i>Welcome to</i></b>
+        </p>
+        <h1 class="animate-on-scroll">RA Travels and Tours</h1>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tours">Book a Tour</a></li>
+            <li><a href="#policy">Travel Policy</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="slider container">
+        <div class="slide">
+          <img src="images/travel.jpg" alt="Travel" />
+          <div class="content animate-on-scroll">
+            <h2>Trip to Heaven Valley! "Naran"</h2>
+            <p>Enjoy the scenic views of green mountains and rivers.</p>
+            <a href="#tours" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/travell.jpg" alt="Travel 2" />
+          <div class="content animate-on-scroll">
+            <h2>Trip to City of Lights! "Turtle Beach"</h2>
+            <p>Enjoy the vast view of sea among cute turtles.</p>
+            <a href="#tours" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/travelll.jpg" alt="Travel 3" />
+          <div class="content animate-on-scroll">
+            <h2>Trip to Skardu "Hunza Valley"</h2>
+            <p>See from your eyes the beauty of Pakistan.</p>
+            <a href="#tours" class="btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tours" class="booking-section container">
+      <h2 class="section-title animate-on-scroll">Book Your Dream Tour</h2>
+      <form id="bookingForm" class="animate-on-scroll">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="date" id="date" required />
+        </div>
+        <div class="form-group">
+          <select id="destination" required>
+            <option value="">Select Destination</option>
+            <option value="naran">Naran Valley</option>
+            <option value="turtle">Turtle Beach</option>
+            <option value="hunza">Hunza Valley</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </section>
+
+    <section id="features" class="features container">
+      <div class="feature-grid">
+        <div class="feature-card animate-on-scroll">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Handpicked Tours</h3>
+          <p>Carefully selected destinations for unforgettable experiences.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <i class="fas fa-hotel"></i>
+          <h3>Luxury Hotels</h3>
+          <p>Stay in comfort with our premium accommodation options.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <i class="fas fa-users"></i>
+          <h3>Travel Guides</h3>
+          <p>Expert guides to enhance your travel experience.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="policy" class="container animate-on-scroll">
+      <h2 class="section-title">Travel Policy</h2>
+      <div class="policy-content">
+        <h3>Booking & Cancellation</h3>
+        <p>Book your tour at least 7 days in advance. Cancellations made 48 hours before departure are eligible for full refund.</p>
+        
+        <h3>Safety Guidelines</h3>
+        <p>All travelers must follow safety protocols during the tour. Professional guides will be available throughout the journey.</p>
+        
+        <h3>What's Included</h3>
+        <ul>
+          <li>Transportation</li>
+          <li>Accommodation</li>
+          <li>Meals (breakfast and dinner)</li>
+          <li>Professional tour guide</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="container animate-on-scroll">
+      <h2 class="section-title">About RA Travels</h2>
+      <div class="about-content">
+        <p>RA Travels and Tours has been providing exceptional travel experiences for over a decade. We specialize in showcasing the natural beauty of Pakistan, from the scenic valleys of the north to the beautiful coastlines.</p>
+        
+        <div class="feature-grid">
+          <div class="feature-card">
+            <i class="fas fa-award"></i>
+            <h3>10+ Years Experience</h3>
+            <p>Trusted by thousands of satisfied customers.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Safe & Secure</h3>
+            <p>Your safety is our top priority on every journey.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-star"></i>
+            <h3>5-Star Rated</h3>
+            <p>Consistently rated as the best travel agency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container animate-on-scroll">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>+92 313-6337609</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>info@ratravels.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Address</h3>
+              <p>123 Travel Street, Islamabad, Pakistan</p>
+            </div>
+          </div>
+        </div>
+        
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="contact-name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="contact-email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p class="animate-on-scroll"><i>We're waiting for you on board!!</i></p>
+      </div>
+    </footer>
+
+    <script src="project1.js"></script>
+  </body>
+</html>

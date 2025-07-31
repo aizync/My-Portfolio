@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechHunk Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="project3.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Welcome to <b><i>TechHunk</i></b></h1>
+      <div class="cart-widget">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+        <span id="cart-total">Rs. 0</span>
+      </div>
+    </div>
+    
+    <div class="search-bar">
+      <input type="text" id="search-products" placeholder="Search products...">
+      <i class="fas fa-search"></i>
+    </div>
+  </header>
+
+  <div class="filters">
+    <h2>Shop by Category</h2>
+    <div class="category-buttons">
+      <button class="category-btn active" data-category="all">
+        <i class="fas fa-th-large"></i>
+        <span>All Products</span>
+        <small id="count-all">12</small>
+      </button>
+      <button class="category-btn" data-category="phones">
+        <i class="fas fa-mobile-alt"></i>
+        <span>Smartphones</span>
+        <small id="count-phones">3</small>
+      </button>
+      <button class="category-btn" data-category="earphones">
+        <i class="fas fa-headphones"></i>
+        <span>Audio</span>
+        <small id="count-earphones">4</small>
+      </button>
+      <button class="category-btn" data-category="watches">
+        <i class="fas fa-clock"></i>
+        <span>Wearables</span>
+        <small id="count-watches">3</small>
+      </button>
+      <button class="category-btn" data-category="powerbanks">
+        <i class="fas fa-battery-three-quarters"></i>
+        <span>Power & Charging</span>
+        <small id="count-powerbanks">2</small>
+      </button>
+    </div>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card" data-id="1" data-category="phones">
+      <div class="product-image">
+        <img src="images/product1.jpg" alt="iPhone 13 Pro Max">
+        <div class="product-overlay">
+          <span>Click for details</span>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>iPhone 13 Pro Max</h3>
+        <p class="price">Rs. 299,999</p>
+        <button class="add-to-cart">
+          <i class="fas fa-cart-plus"></i> Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="2" data-category="earphones">
+      <div class="product-image">
+        <img src="images/product2.jpg" alt="Apple Buds Pro 2">
+        <div class="product-overlay">
+          <span>Click for details</span>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>Apple Buds Pro 2</h3>
+        <p class="price">Rs. 49,999</p>
+        <button class="add-to-cart">
+          <i class="fas fa-cart-plus"></i> Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="3" data-category="earphones">
+      <div class="product-image">
+        <img src="images/product3.jpg" alt="Apple Buds 1">
+        <div class="product-overlay">
+          <span>Click for details</span>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>Apple Buds 1</h3>
+        <p class="price">Rs. 39,999</p>
+        <button class="add-to-cart">
+          <i class="fas fa-cart-plus"></i> Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="4" data-category="earphones">
+      <div class="product-image">
+        <img src="images/product4.jpg" alt="Xiaomi Headphones Pro">
+        <div class="product-overlay">
+          <span>Click for details</span>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>Xiaomi Headphones Pro</h3>
+        <p class="price">Rs. 19,999</p>
+        <button class="add-to-cart">
+          <i class="fas fa-cart-plus"></i> Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="5" data-category="watches">
+      <div class="product-image">
+        <img src="images/product5.jpg" alt="Apple Watch 2">
+        <div class="product-overlay">
+          <span>Click for details</span>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>Apple Watch 2</h3>
+        <p class="price">Rs. 89,999</p>
+        <button class="add-to-cart">
+          <i class="fas fa-cart-plus"></i> Add to Cart
+        </button>
+      </div>
+    </div>
+
+      <div class="product-card" data-id="6" data-category="powerbanks">
+        <div class="product-image">
+          <img src="images/product6.jpg" alt="Wireless Powerbank">
+          <div class="product-overlay">
+            <span>Click for details</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Mi Power Bank</h3>
+          <p class="price">Rs. 4,999</p>
+          <button class="add-to-cart">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Additional Phones -->
+      <div class="product-card" data-id="7" data-category="phones">
+        <div class="product-image">
+          <img src="images/samsung-galaxy-s23-new.jpg" alt="Samsung Galaxy S23">
+          <div class="product-overlay">
+            <span>Click for details</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Samsung Galaxy S23</h3>
+          <p class="price">Rs. 249,999</p>
+          <button class="add-to-cart">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="8" data-category="phones">
+        <div class="product-image">
+          <img src="images/pixel-phone.jpg" alt="Google Pixel 7">
+          <div class="product-overlay">
+            <span>Click for details</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Google Pixel 7</h3>
+          <p class="price">Rs. 189,999</p>
+          <button class="add-to-cart">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Additional Audio Products -->
+      <div class="product-card" data-id="9" data-category="earphones">
+        <div class="product-image">
+          <img src="images/headphones-sony.jpg" alt="Sony WH-1000XM5">
+          <div class="product-overlay">
+            <span>Click for details</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Sony WH-1000XM5</h3>
+          <p class="price">Rs. 79,999</p>
+          <button class="add-to-cart">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Additional Wearables -->
+      <div class="product-card" data-id="10" data-category="watches">
+        <div class="product-image">
+          <img src="images/apple-watch.jpg" alt="Apple Watch Series 8">
+          <div class="product-overlay">
+            <span>Click for details</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Apple Watch Series 8</h3>
+          <p class="price">Rs. 69,999</p>
+          <button class="add-to-cart">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="11" data-category="watches">
+        <div class="product-image">
+          <img src="images/fitness-watch.jpg" alt="Fitbit Versa 4">
+          <div class="product-overlay">
+            <span>Click for details</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Fitbit Versa 4</h3>
+          <p class="price">Rs. 45,999</p>
+          <button class="add-to-cart">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Additional Power & Charging -->
+      <div class="product-card" data-id="12" data-category="powerbanks">
+        <div class="product-image">
+          <img src="images/wireless-charger.jpg" alt="Anker Wireless Charger">
+          <div class="product-overlay">
+            <span>Click for details</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Anker Wireless Charger</h3>
+          <p class="price">Rs. 8,999</p>
+          <button class="add-to-cart">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="project3.js"></script>
+</body>
+</html>
